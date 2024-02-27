@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name: </label>
+            <input type="text" placeholder="John Doe" required>
+            <br>
+
+            <label>Color: </label>
+            <input type="color" value="#e3792a">
+            <br>
+
+            <label>Birth Date: (only between 1st Feb 2024 to 25 Feb 2024)</label>
+            <input type="date" min="2024-02-01" max="2024-02-25">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bookings</legend>
+            <label>Booking Date: (only Thursday within Feb 2024)</label>
+            <input type="date" min="2024-02-01" max="2024-02-25" step="7">
+            <br>
+
+            <label>Booking Time: </label>
+            <input type="datetime-local" step="7">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label>Rating: </label>
+            <input type="range" min="0" max="10" value="5" step="2">
+            <br>
+
+            <label>Review: </label>
+            <input type="range" min="0" max="10" value="10" step="2" list="markers">
+            <datalist id="markers" id="range_form">
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </datalist>
+            <br>
+        </fieldset>
+
+        <br>
+
+        <button>Submit</button>
+    </form>
+
+    <hr>Wikipedia</h1>
+    <p contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dignissimos velit consectetur deserunt voluptatum laborum. Eos enim harum modi nostrum voluptatem ipsum id nihil voluptas. Impedit debitis officia exercitationem nobis.</p>
+
+    <!-- <canvas width="480" height="320"></canvas> -->
+
+</body>
+<!-- <script>// Select the canvas element
+    var canvas = document.querySelector('canvas');
+    
+    // Get the 2D drawing context
+    var ctx = canvas.getContext('2d');
+    
+    // Set the fill color
+    ctx.fillStyle = 'red';
+    
+    // Draw a filled rectangle
+    ctx.fillRect(10, 10, 100, 100);
+</script> -->
+</html>

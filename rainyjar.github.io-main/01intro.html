@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Lesson 1 (24/1)</title>
+</head>
+
+<body>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    <h1>New header</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur, facere illo sed nam eos tempora.
+        Impedit animi quas dolorem atque provident facilis explicabo, odio temporibus velit quisquam dolores veritatis?
+    </p>
+    <video id="vplayer" src="video/pexels-zlatin-georgiev-5607553 (1080p).mp4" loop controls width="480"
+        poster="image/pexels-valeria-boltneva-8563042.jpg"></video>
+    <button onclick="playVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+
+    <hr>
+    <audio src="image/pexels-valeria-boltneva-8563042.jpg" controls autoplay></audio>
+    <h1>Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OXDLsYPp0z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
+</body>
+<script>
+    
+    let vplayer = document.getElementById("vplayer");
+    function playVideo() {
+        vplayer.play();
+    }
+
+    function pauseVideo() {
+        vplayer.pause();
+    }
+</script>
+</html>

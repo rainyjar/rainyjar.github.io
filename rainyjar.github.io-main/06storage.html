@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body onload="loadData()">
+
+    <h1>Local Storage</h1>
+    <h2>Name: <span id="name"></span></h2>
+    <button onclick="storeName()">Store my name</button>
+    <button onclick="removeName()">Remove my name</button>
+    <br><br>
+
+
+    <button onclick="increaseCounter()">Counter</button>
+    <h1 id="counter">0</h1>
+
+    <button onclick="resetCounter()">Reset counter</button>
+</body>
+<script>
+    function storeName() {
+        localStorage.setItem("name", "vinnnnnnnn");
+        let name = localStorage.getItem("name");
+        document.getElementById("name").innerHTML = name;
+    }
+
+    function removeName() {
+        localStorage.removeItem("name");
+        let name = localStorage.getItem("name");
+        document.getElementById("name").innerHTML = name;
+    }
+
+    function increaseCounter() {
+        let counter = parseInt(document.getElementById("counter").innerHTML);
+        counter++;
+        document.getElementById("counter").innerHTML = counter;
+        localStorage.setItem("counter", counter);
+    }
+
+    function loadData() {
+        //read counter data from local storage
+        let counter = localStorage.getItem("counter");
+        if (counter == null) {
+            counter = 0;
+        }
+        let name = localStorage.getItem("name");
+        document.getElementById("counter").innerHTML = counter;
+        document.getElementById("name").innerHTML = name;
+        
+    }
+
+    function resetCounter() {
+        localStorage.removeItem("counter");
+        let counter = localStorage.getItem("counter");
+        if (counter == null) {
+            counter = 0;
+        }
+        document.getElementById("counter").innerHTML = counter;
+    }
+</script>
+
+</html>
