@@ -1,19 +1,13 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.f8630482.css",
-    "main.js": "/react/static/js/main.6ba7971f.js",
-    "static/media/cat.png": "/react/static/media/cat.e5e8730eadc45e56a37c.png",
-    "static/media/ike.jpg": "/react/static/media/ike.e6ce7df6ec2cda148fcf.jpg",
-    "static/media/apu_still01_entrance_0-1.jpg": "/react/static/media/apu_still01_entrance_0-1.9ae522c2b32f3c2098cb.jpg",
-    "static/media/pointing.jpg": "/react/static/media/pointing.ff78575e144df65e363e.jpg",
-    "static/media/thumbs-down.svg": "/react/static/media/thumbs-down.8cb75e3f948a06c4fd4e.svg",
+    "main.css": "/react/static/css/main.e708fa46.css",
+    "main.js": "/react/static/js/main.7f444f38.js",
     "index.html": "/react/index.html",
-    "static/media/thumbs-up.svg": "/react/static/media/thumbs-up.b429fdfeed5479b1300f.svg",
-    "main.f8630482.css.map": "/react/static/css/main.f8630482.css.map",
-    "main.6ba7971f.js.map": "/react/static/js/main.6ba7971f.js.map"
+    "main.e708fa46.css.map": "/react/static/css/main.e708fa46.css.map",
+    "main.7f444f38.js.map": "/react/static/js/main.7f444f38.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8630482.css",
-    "static/js/main.6ba7971f.js"
+    "static/css/main.e708fa46.css",
+    "static/js/main.7f444f38.js"
   ]
 }
